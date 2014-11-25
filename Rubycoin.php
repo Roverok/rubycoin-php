@@ -1,6 +1,6 @@
 <?php
 
-define("RUBYCOIN_ADDRESS_VERSION", "61");
+define("RUBYCOIN_ADDRESS_VERSION", "60");
 
 /**
  * Rubycoin utility functions class
@@ -252,7 +252,7 @@ class RubycoinClient extends jsonrpc_client {
    * @access public
    * @throws RubycoinClientException
    */
-  public function __construct($scheme, $username, $password, $address = "localhost", $port = 4938, $certificate_path = '', $debug_level = 0) {
+  public function __construct($scheme, $username, $password, $address = "localhost", $port = 5938, $certificate_path = '', $debug_level = 0) {
     $scheme = strtolower($scheme);
     if ($scheme != "http" && $scheme != "https")
       throw new RubycoinClientException("Scheme must be http or https");
