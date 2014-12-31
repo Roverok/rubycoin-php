@@ -1,7 +1,7 @@
 rubycoin-php
 ============
 
-RPC bindings to create a service, website, or app that uses Rubycoin.
+PHP library for developing Rubycoin applications.
 
 ```
 require('Rubycoin.php');
